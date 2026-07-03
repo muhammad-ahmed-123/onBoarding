@@ -1,0 +1,6 @@
+<div>
+    <%= @product.name %>
+    <%= link_to "Edit",edit_product_path(@product)%>
+    <%= link_to "Back", products_path %>
+    <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "are you sure?" } %>
+</div>
