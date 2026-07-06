@@ -1,0 +1,6 @@
+<h1>Edit task</h1>
+
+<%= render "form", project: @project, task: @task %>
+
+<%= link_to "Show", [@project, @task] %>
+<%= link_to "Back to tasks", project_tasks_path(@project) %>

@@ -1,0 +1,15 @@
+alpha_one:
+  title: Write specs
+  description: Cover model validations
+  completed: false
+  project: alpha
+
+alpha_two:
+  title: Ship feature
+  completed: true
+  project: alpha
+
+beta_one:
+  title: Plan roadmap
+  completed: false
+  project: beta

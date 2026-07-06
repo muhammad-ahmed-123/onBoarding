@@ -1,0 +1,13 @@
+<h1>Projects</h1>
+
+<%= link_to "New project", new_project_path %>
+
+<ul>
+  <% @projects.each do |project| %>
+    <li>
+      <%= link_to project.name, project %>
+      <%= link_to "Edit", edit_project_path(project) %>
+      <%= button_to "Destroy", project, method: :delete, form: { data: { turbo_confirm: "Are you sure?" } } %>
+    </li>
+  <% end %>
+</ul>
